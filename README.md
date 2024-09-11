@@ -8,8 +8,7 @@ This exampe show simulations of stem cell cultivation in an aerated hollow fiber
 You see in the diagram typical curves for cell growth, glucose, lactate and also dissolved oxygen during perfusion cultivation.
 
 You start up the notebook in Colab by pressing here
-[start BPL notebook]
-(https://colab.research.google.com/github/janpeter19/BPL_STEM_AIR_Perfusion/blob/main/BPL_STEM_AIR_Perfusion_colab.ipynb)
+[start BPL notebook](https://colab.research.google.com/github/janpeter19/BPL_STEM_AIR_Perfusion/blob/main/BPL_STEM_AIR_Perfusion_colab.ipynb)
 Then you in the menu choose Runtime/Run all. If you have chosen the altarnative with FMPy click first on the symbol Open in Colab. The subsequent execution of the simulations of STEM cell cultivation take just a second or so. 
 
 You can continue in the notebook and make new simulations and follow the examples given. Here are many things to explore!
