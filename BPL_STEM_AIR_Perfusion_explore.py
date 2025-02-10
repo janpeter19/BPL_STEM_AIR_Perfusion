@@ -36,7 +36,7 @@ if platform.system() == 'Windows':
    print('Windows - run FMU pre-compiled JModelica 2.14')
    flag_vendor = 'JM'
    flag_type = 'CS'
-   fmu_model ='BPL_STEM_AIR_Perfusion_windows_jm_cs.fmu'        
+   fmu_model ='BPL_STEM_AIR_Reactor_windows_jm_cs.fmu'        
    model = load_fmu(fmu_model, log_level=0)  
 elif platform.system() == 'Linux':  
    flag_vendor = 'OM'
@@ -44,7 +44,7 @@ elif platform.system() == 'Linux':
    if flag_vendor in ['OM','om']:
       print('Linux - run FMU pre-compiled OpenModelica') 
       if flag_type in ['CS','cs']:         
-         fmu_model ='BPL_STEM_AIR_Perfusion_linux_om_cs.fmu'    
+         fmu_model =''    
          model = load_fmu(fmu_model, log_level=0) 
       if flag_type in ['ME','me']:         
          fmu_model = 'BPL_STEM_AIR_Reactor_linux_om_me.fmu'     
