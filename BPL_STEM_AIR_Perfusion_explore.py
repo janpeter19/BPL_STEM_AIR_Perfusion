@@ -6,6 +6,7 @@
 # 2024-08-31 - Created
 # 2024-09-11 - Changed name of FMU
 # 2024-10-03 - Changed name of FMU
+# 2025-07-22 - Updated to MSL 4.1.0 and just the information text
 #------------------------------------------------------------------------------------------------------------------
 
 # Setup framework
@@ -68,8 +69,8 @@ else:
   
 # Provide various MSL and BPL versions
 if flag_vendor in ['JM', 'jm', 'OM', 'om']:
-   MSL_usage = '3.2.3 - used components: RealInput, RealOutput, CombiTimeTable, Types' 
-   MSL_version = '3.2.3'
+   MSL_usage = '4.1.0 - used components: RealInput, RealOutput, CombiTimeTable, Types' 
+   MSL_version = '4.1.0'
    BPL_version = 'BPL - not used' 
 
 # Simulation time
