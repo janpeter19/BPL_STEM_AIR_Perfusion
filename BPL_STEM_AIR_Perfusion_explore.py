@@ -8,6 +8,7 @@
 # 2024-10-03 - Changed name of FMU
 # 2025-07-22 - Updated to MSL 4.1.0 and just the information text
 # 2025-11-10 - Update FMU-explore 1.0.2 
+# 2025-11-13 - Removed global declaration outside the funtions
 #------------------------------------------------------------------------------------------------------------------
 
 # Setup framework
@@ -33,7 +34,6 @@ if platform.system() == 'Linux': locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 #------------------------------------------------------------------------------------------------------------------
 
 # Provde the right FMU and load for different platforms in user dialogue:
-global model
 if platform.system() == 'Windows':
    print('Windows - run FMU pre-compiled JModelica 2.14')
    flag_vendor = 'JM'
@@ -75,8 +75,8 @@ if flag_vendor in ['JM', 'jm', 'OM', 'om']:
    BPL_version = 'BPL - not used' 
 
 # Simulation time
-global simulationTime; simulationTime = 1000.0
-global prevFinalTime; prevFinalTime = 0
+simulationTime = 1000.0
+prevFinalTime = 0
 
 # Dictionary of time discrete states
 timeDiscreteStates = {} 
@@ -123,7 +123,6 @@ parLocation['OTR'] = 'OTR'
 parCheck = []
 
 # Create list of diagrams to be plotted by simu()
-global diagrams
 diagrams = []
 
 def newplot(title='Stem cell perfusion cultivation', plotType='TimeSeries'):
