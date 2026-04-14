@@ -12,6 +12,7 @@
 # 2025-11-14 - FMU-explore 1.0.2 corrected
 # 2025-11-19 - FMU-explore 1.0.2 corrected again parLocation() with sheets as argument
 # 2026-03-28 - FMU-explore 1.0.3
+# 2026-04-14 - BPL 2.3.2
 #------------------------------------------------------------------------------------------------------------------
 
 # Setup framework
